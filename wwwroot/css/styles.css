@@ -1,0 +1,40 @@
+.text-center{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.boton{
+    margin-top: 10px;
+}
+
+
+
+.cuadro {
+    display: flex;
+    margin-top: 10px;
+}
+.bton {
+    width: 140px;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.one{
+    background-color: yellow;
+}
+.two{
+    background-color: blue;
+    color: white;
+}
+.three{
+    background-color: red;
+    color: white;
+}
+.four{
+    background-color: green;
+}
+
+.logout{
+    margin-top: 70px;
+    margin-left: 300px;
+}

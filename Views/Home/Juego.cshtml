@@ -1,0 +1,36 @@
+
+    @{
+        <div class="Navbar">
+            @if( @Context.Session.GetString("UserName") !=""){
+            <h1>Welcome @Context.Session.GetString("UserName") !! </h1>
+            }else{}
+        </div>
+       
+        
+    }
+    <div class="Container">
+        <h1>@Context.Session.GetInt32("Number")</h1>
+    <div class="containerFirst">
+
+    <div class = "cuadro uno">
+        <div class="cuadrado suma">
+            <form asp-action="Sumar"><button class="bton one " >+1</button></form>
+        </div>
+        <div class="cuadrado resta">
+            <form asp-action="Restar"><button class="bton two" >-1</button></form>
+        </div>
+    </div>
+    <div class="cuadro dos">
+        <div class="cuadrado multiplicacion">
+            <form asp-action="Multiplicar"><button class="bton three" >X 2</button></form>
+        </div>
+        <div class="cuadrado aleatorio">
+            <form asp-action="Aleatorio"><button class="bton four" >+ Random</button></form>
+        </div>
+    </div>
+
+    <div class="logout">
+        <form asp-action="Cleaner" method="POST"><button class="buttonLogout">Log Out</button> </form>
+        
+    </div>
+
